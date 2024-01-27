@@ -31,7 +31,7 @@ int main() {
     cout << "Hi, in Cairo Metro App\n";
     setColor(1,1);//change color to blue
     cout << "use up and down arrow :)\n";
-    setColor(5, 1);//change color to defualt
+    setColor(5, 1);//change color to default
     cout << "Which line are you starting from?\n";
     userChoise = display(choseMenu);
 
