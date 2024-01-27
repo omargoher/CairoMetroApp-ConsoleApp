@@ -78,27 +78,32 @@ int main() {
     
     int numStations = numberOfStations(startStations, endStations);
     setColor(1, 1);// change color to blue
-    cout << "The number of stations in your trip is " << numStations << "\n" << "Your The Tiket Price is : ";
+    cout << "The number of stations in your trip is " << numStations << "\n" << "Your The Ticket Price is : ";
     
-    // calculate the Ticket price
+    //Calculate the Ticket price
     if (numStations <= 9) {
-        // if number of stations in the trip less than or equal 9 The tiket price equal 6
+        //If the number of stations in the trip is less than or equal to 9 The ticket price equals 6
         cout << 6;
     }
     else if (numStations <= 16) {
-        // if number of stations in the trip less than or equal 16 and more than 9 The tiket price equal 8
+        // If the number of stations in the trip is less than or equal to 16 and more than 9 The ticket price equals 8
         cout << 8;
     }
     else if (numStations <= 23){
-        // if number of stations in the trip less than or equal 23 and more than 16 The tiket price equal 12
+        //If the number of stations in the trip is less than or equal to 23 and more than 16 The ticket price equals 12
         cout << 12;
     }
     else {
-        // if number of stations in the trip more than 23 The tiket price equal 15
+        //If the number of stations in the trip is more than 23 The ticket price equals 15
         cout << 15;
     }
-
     setColor(4, 2);
-
+    
+    // Display All stations in the trip
+    cout << "\nTrip stations:";
+    setColor(1, 1);// change color to blue
+    cout << displayPath(endStations) << "\n";
+    setColor(1, 2);
+    
     return 0;
 }
