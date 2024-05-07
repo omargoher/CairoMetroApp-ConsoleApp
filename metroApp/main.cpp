@@ -31,7 +31,7 @@ int main() {
     cout << "Hi, in Cairo Metro App\n";
     setColor(1,1);//change color to blue
     cout << "use up and down arrow :)\n";
-    setColor(5, 1);//change color to default
+    setColor(5, 1);//change color to defualt
     cout << "Which line are you starting from?\n";
     userChoise = display(choseMenu);
 
@@ -78,32 +78,33 @@ int main() {
     
     int numStations = numberOfStations(startStations, endStations);
     setColor(1, 1);// change color to blue
-    cout << "The number of stations in your trip is " << numStations << "\n" << "Your The Ticket Price is : ";
+    cout << "The number of stations in your trip is " << numStations << "\n" << "Your The Tiket Price is : ";
     
-    //Calculate the Ticket price
+    // calculate the Ticket price
     if (numStations <= 9) {
-        //If the number of stations in the trip is less than or equal to 9 The ticket price equals 6
+        // if number of stations in the trip less than or equal 9 The tiket price equal 6
         cout << 6;
     }
     else if (numStations <= 16) {
-        // If the number of stations in the trip is less than or equal to 16 and more than 9 The ticket price equals 8
+        // if number of stations in the trip less than or equal 16 and more than 9 The tiket price equal 8
         cout << 8;
     }
     else if (numStations <= 23){
-        //If the number of stations in the trip is less than or equal to 23 and more than 16 The ticket price equals 12
+        // if number of stations in the trip less than or equal 23 and more than 16 The tiket price equal 12
         cout << 12;
     }
     else {
-        //If the number of stations in the trip is more than 23 The ticket price equals 15
+        // if number of stations in the trip more than 23 The tiket price equal 15
         cout << 15;
     }
+
     setColor(4, 2);
-    
+
     // Display All stations in the trip
     cout << "\nTrip stations:";
     setColor(1, 1);// change color to blue
     cout << displayPath(endStations) << "\n";
     setColor(1, 2);
-    
+
     return 0;
 }
