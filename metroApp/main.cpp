@@ -83,19 +83,19 @@ int main() {
     // calculate the Ticket price
     if (numStations <= 9) {
         // if number of stations in the trip less than or equal 9 The tiket price equal 6
-        cout << 6;
+        cout << 8;
     }
     else if (numStations <= 16) {
         // if number of stations in the trip less than or equal 16 and more than 9 The tiket price equal 8
-        cout << 8;
+        cout << 10;
     }
     else if (numStations <= 23){
         // if number of stations in the trip less than or equal 23 and more than 16 The tiket price equal 12
-        cout << 12;
+        cout << 15;
     }
     else {
         // if number of stations in the trip more than 23 The tiket price equal 15
-        cout << 15;
+        cout << 20;
     }
 
     setColor(4, 2);
